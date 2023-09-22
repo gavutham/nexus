@@ -1,0 +1,86 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background-color: lightcyan; // Background color for the login box
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-in-out; // Apply fadeInUp animation
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    /* border: 2px solid black; */
+    margin-bottom: 15px;
+    text-align: center;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      height: 30px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      padding: 3px;
+      font-size: small;
+      &:focus {
+        outline: none;
+        border-color: #007bff; // Highlight the input when focused
+      }
+    }
+
+    .error-message {
+      margin-left: 10%;
+      font-family: "Times New Roman", Times, serif;
+      text-align: left;
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  }
+
+  button {
+    background-color: darkcyan; // Button background color
+    color: #ffffff; // Button text color
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3; // Button color on hover
+    }
+  }
+}
+
+// Fade-up animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.username {
+  padding-left: 10%;
+  text-align: start;
+}
